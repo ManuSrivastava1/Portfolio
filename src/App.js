@@ -1,10 +1,29 @@
-import logo from './logo.svg';
+// import text from './bitmap_Layer1.svg';
 import './App.css';
+
+import MainGrid from './components/main_grid';
+import Navbar from './components/navbar';
+import Footer from './components/footer'
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      <header>
+        <Navbar />
+      </header>
+      <main>
+        <MainGrid />
+      </main>
+      <Footer />
+    </div>
+  );
+}
+
+export default App;
+
+/*
+<header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -17,9 +36,6 @@ function App() {
         >
           Learn React
         </a>
-      </header>
-    </div>
-  );
-}
+</header>
 
-export default App;
+*/

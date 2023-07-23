@@ -1,16 +1,8 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  /*text-align: center; */
+  margin-left: calc((100vw - 900px) / 2);
+  margin-right: calc((100vw - 900px) / 2);
+  max-width: 900px;  /*min(900px,60vw);*/
 }
 
 .App-header {
@@ -24,15 +16,179 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/*Typography Styles*/
+@font-face {
+  font-family: 'QuestaG';
+  src: url('./fonts/2-Questa_Sans_Regular.otf') format('truetype');
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@font-face {
+  font-family: 'NeueMachina_L';
+  src: url('./fonts/NeueMachina-Light.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'NeueMachina_R';
+  src: url('./fonts/NeueMachina-Regular.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'NeueMachina_UB';
+  src: url('./fonts/NeueMachina-Ultrabold.otf') format('truetype');
+}
+
+.H1{
+  font-family: 'NeueMachina_UB',sans-serif;
+  font-size: 4.5rem;
+  line-height: 76px;
+  color: #090EC6;
+  overflow-wrap: break-word;
+}
+
+.H2{
+  font-family: 'NeueMachina_UB',sans-serif;
+  font-size: calc(0.5rem + 0.8vw);
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.H3{
+  font-family: 'NeueMachina_UB',sans-serif;
+  font-size: max(calc(0.25rem + 0.75vw),0.6rem);
+  color: #090EC6;
+}
+
+.H4{
+  font-family: 'NeueMachina_R',sans-serif;
+  font-size: max(calc(0.25rem + 0.85vw),0.6rem);;
+  line-height: 1.5rem;
+  color: #090EC6;
+}
+
+.H5{
+  font-family: 'NeueMachina_R',sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  color: #4D4D4D;
+}
+
+.H6{
+  font-family: 'NeueMachina_UB',sans-serif;
+  font-size: 12px;
+  color: #090EC6;
+}
+
+.Btext1{
+  font-family: 'QuestaG',sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  color: #090EC6;
+}
+.Btext2{
+  font-family: 'QuestaG',sans-serif;
+  font-size: 12px;
+  line-height: 22px;
+  color: #090EC6;
+}
+
+.hero_text2{
+  padding-top:4vh;
+}
+
+/*Buttons and Tags*/
+
+
+/*media queries*/
+@media (max-width: 900px){
+  .App{
+    margin-left: 10vw;
+    margin-right:10vw;
+    max-width: 80vw;
+  };
+  .main-grid{
+    padding-top: 8vh !important;
   }
-  to {
-    transform: rotate(360deg);
+  .about-grid{
+    padding-top: 8vh !important;
+  }
+  .H1{
+    font-size: calc(2rem + 2vw);
+    line-height: calc(2rem + 2.5vw);
+  }
+  .contact{
+    grid-column:1/5 !important ;
+  }
+  .publishDate{
+    grid-column:5/9 !important ;
+    grid-row: 1/2 !important;
+  }
+  .links{
+    grid-row:2/3 !important ;
+    grid-column:1/9 !important;
+    justify-content: center !important;
+    padding: 8px 8px 8px 0px !important;
+  }
+}
+
+@media (max-width: 650px){
+  .hero_text2{
+    grid-column:1/9 !important;
+  }
+  .tags{
+    grid-column:1/9 !important;
+  }
+  .projects{
+    grid-template-columns: 1fr !important;
+  }
+  .boldText{
+    grid-column: 1/9 !important;
+  }
+  .Sectioncard{
+    padding:1rem !important;
+  }
+  .sec1{
+    grid-column: 1/9 !important;
+    grid-row: 2/3 !important;
+    padding: 1rem 0rem !important;
+  }
+  .info1{
+    grid-column: 1/9 !important;
+    grid-row: 3/4 !important;
+  }
+  .sec2{
+    grid-column: 1/9 !important;
+    grid-row: 4/5 !important;
+    padding: 1rem 0rem !important;
+  }
+  .info2{
+    grid-column: 1/9 !important;
+    grid-row: 5/6 !important;
+  }
+  .sec3{
+    grid-column: 1/9 !important;
+    grid-row: 6/7 !important;
+    padding: 1rem 0rem !important;
+  }
+  .info3{
+    grid-column: 1/9 !important;
+    grid-row: 7/8 !important;
+  }
+  .sec4{
+    grid-column: 1/9 !important;
+    grid-row: 8/9 !important;
+    padding: 1rem 0rem !important;
+  }
+  .info4{
+    grid-column: 1/9 !important;
+    grid-row: 9/10 !important;
+  }
+  .sec5{
+    grid-column: 1/9 !important;
+    grid-row: 10/11 !important;
+    padding: 1rem 0rem !important;
+  }
+  .info5{
+    grid-column: 1/9 !important;
+    grid-row: 11/12 !important;
   }
 }
