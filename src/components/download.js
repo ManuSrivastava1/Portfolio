@@ -1,5 +1,5 @@
 import React from 'react'
-import githubSVG from '../images/icons8-github-ios-16-glyph/icons8-github-90.svg'
+import CV from '../CV[40].pdf'
 
 
 
@@ -17,7 +17,7 @@ function Download({margin}) {
 
     return (
         <>
-        <a href={githubSVG} download>
+        <a href={CV} download>
         <button style={styles.container}>
             <span className='H6'>Download CV</span>
         </button>
