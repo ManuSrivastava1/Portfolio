@@ -24,6 +24,7 @@ function SectionCard({ Label }) {
         
             <p className='H2' style={styles.text}>
                 { Label[1] }
+                
             </p>
         </div>
         </>
