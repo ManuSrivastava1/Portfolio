@@ -1,6 +1,7 @@
 import React from 'react'
 import Photo from '../images/mefacenew@2x.png'
 
+
 import SectionCard from './sectionCard'
 import SectionInfo from './sectionInfo'
 import Download from './download';
@@ -11,15 +12,17 @@ function AboutGrid() {
         <div className='about-grid' style={styles.aboutGrid}>
             <img src={Photo} alt='meFace' style={styles.bg}></img>
 
-            <div className='boldText' style={styles.boldtext}>
-                <p className='Btext1'>Meet</p>
-                <p className='H1'>Manu Srivastava</p>
+            <div  style={styles.boldtext}>
+                <span className='H1'>Meet </span>
+                <span className='H1B'>Manu Srivastava </span>
                 <p className='Btext1'>Here will be some text which will talk about
                 why I would be a good addition to your team 
                 and what are my core skills and values</p>
-                
+            </div>
+            <div style={styles.button}>
                 <Download margin={'8pt 0pt 8pt 0pt'}/>
             </div>
+            
             <div className='sec1' style={styles.sec1}>
                 <SectionCard Label={['#9B9B9B','Education']}/>
             </div>
@@ -29,7 +32,7 @@ function AboutGrid() {
                                         Bachelor's Degree - 
                                         B.des in Industrial Design
                                         September,2015- January,2020 <br/>
-                                        <a href='https://www.nid.ac.in/academics/b-des-program/industrial-design'>NID VIJAYAWADA</a>
+                                        <a href='https://www.nid.ac.in/academics/b-des-program/industrial-design' target="_blank" rel='noreferrer'>NID VIJAYAWADA</a>
                                         </div>
                                         <br/>
                                         <div>
@@ -121,61 +124,76 @@ const styles={
     aboutGrid:{
         paddingTop:'14vh',
         display:'grid',
-        gridTemplateColumns:'repeat(8, 1fr)',
+        gridTemplateColumns:'repeat(12, 1fr)',
         // gridTemplateRows:'repeat(6, 1fr)',
-        gridColumnGap:'20px',
-        gridRowGap:'16px',
+        // gridColumnGap:'20px',
+        // gridRowGap:'16px',
         position:'relative',
         zIndex:'5',
     },
     bg:{
-        gridColumn:'5/9',
+        gridColumn:'9/13',
         gridRow:'1/5',
         width:'max(50%, 8rem)',
     },
     boldtext:{
-        gridColumn:'1/5', 
+        gridColumn:'1/9', 
         gridRow:'1/2',
+        padding:'1rem',
+    },
+    button:{
+        padding:'1rem',
+        gridColumn:'1/3',
     },
     sec1:{
-        gridColumn:'3/5', 
-        gridRow:'2/3',
+        gridColumn:'5/8', 
+        gridRow:'3/4',
+        border:'0.5px solid rgba(43,49,47,0.2)',
     },
     info1:{
-        gridColumn:'5/9', 
-        gridRow:'2/3',
+        gridColumn:'8/13', 
+        gridRow:'3/4',
+        border:'0.5px solid rgba(43,49,47,0.2)',
     },
     sec2:{
-        gridColumn:'3/5', 
-        gridRow:'3/4',
+        gridColumn:'5/8', 
+        gridRow:'4/5',
+        border:'0.5px solid rgba(43,49,47,0.2)',
     },
     info2:{
-        gridColumn:'5/9', 
-        gridRow:'3/4',
+        gridColumn:'8/13', 
+        gridRow:'4/5',
+        border:'0.5px solid rgba(43,49,47,0.2)',
     },
     sec3:{
-        gridColumn:'3/5', 
-        gridRow:'4/5',
+        gridColumn:'5/8', 
+        gridRow:'5/6',
+        border:'0.5px solid rgba(43,49,47,0.2)',
     },
     info3:{
-        gridColumn:'5/9', 
-        gridRow:'4/5',
+        gridColumn:'8/13', 
+        gridRow:'5/6',
+        border:'0.5px solid rgba(43,49,47,0.2)',
     },
     sec4:{
-        gridColumn:'3/5', 
-        gridRow:'5/6',
+        gridColumn:'5/8', 
+        gridRow:'6/7',
+        border:'0.5px solid rgba(43,49,47,0.2)',
     },
     info4:{
-        gridColumn:'5/9', 
-        gridRow:'5/6',
+        gridColumn:'8/13', 
+        gridRow:'6/7',
+        border:'0.5px solid rgba(43,49,47,0.2)',
     },
     sec5:{
-        gridColumn:'3/5', 
-        gridRow:'6/7',
+        gridColumn:'5/8', 
+        gridRow:'7/8',
+        border:'0.5px solid rgba(43,49,47,0.2)',
     },
     info5:{
-        gridColumn:'5/9', 
-        gridRow:'6/7',
+        gridColumn:'8/13', 
+        gridRow:'7/8',
+        border:'0.5px solid rgba(43,49,47,0.2)',
     },
 }
 

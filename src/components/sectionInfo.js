@@ -6,15 +6,17 @@ function SectionInfo({content}) {
     const styles = {
         card:{
             gridColumn:'5/9',
-            backgroundColor:'white',
-            borderRadius:'16px',
+            backgroundColor:'#D9D9D9',
+            padding:'1rem',
         }
     }
 
     return (
         <>
         <div className='info' style={styles.card}>
-            {content}
+            <span className='Btext1 QuestaG'>
+                {content}
+            </span>
         </div>
         
         </>

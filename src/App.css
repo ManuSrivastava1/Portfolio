@@ -65,8 +65,8 @@
 }
 
 .H2{
-  font-family: 'NeueMachina_UB',sans-serif;
-  font-size: calc(0.5rem + 0.8vw);
+  font-size: 1.5rem;
+  font-weight: 700;
   line-height: 24px;
   color: #ffffff;
 }
@@ -90,7 +90,9 @@
 .Plex{
   font-family: 'IBMplexMono_M',sans-serif;
 }
-
+.QuestaG{
+  font-family: 'QuestaG',sans-serif;
+}
 .H5{
   font-size: 0.9rem;
   line-height: 0.9rem;
