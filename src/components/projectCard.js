@@ -50,8 +50,8 @@ function ProjectCard({content}) {
             left: '50%',
             transform: 'translate(-50%, -50%)',
             background: '#D9D9D9',
-            padding: '20px',
-            width:'80vw',
+            padding: '2rem',
+            width:'60vw',
             height:'80vh',
           },
     }
@@ -86,7 +86,7 @@ function ProjectCard({content}) {
                 <div style={styles.modalContainer} onClick={handleModalClose}>
                 <div className='modalSpace' style={styles.modalContent}>
                     {/* Add modal content here */}
-                    <ModalGrid content={content[0]} />
+                    <ModalGrid content={[content[0],content[1],content[2]]} />
                 </div>
                 </div>
             )}

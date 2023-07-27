@@ -9,35 +9,42 @@ function ProjectGrid() {
             <ProjectCard content={
                 ['Predicting pollution level with an LSTM model',
                 'Some project description goes here so that they know what skills were used developer',
-                "#EE7E56"]} />
+                ['Building & Training ML Model','Python','Documentation','Tensorflow','Univariate Prediction','Data Cleaning','Data Analysis']]} />
+
             <ProjectCard content={
                 ['Analysing Prison sentence data in Europe',
                 'Some project description goes here so that they know what skills were used developer',
-                "#F5BB63"]} />
-            <ProjectCard content={
-                ['Data Visualisation of NFT commerce',
-                'Some project description goes here so that they know what skills were used developer',
-                "#F5BB63"]} />
+                ['Data Cleaning','Data Analysis','Python','JavaScript','Data Visualisation','Documentation','Publishing Open Data','Data Ethics']]} />
+
             <ProjectCard content={
                 ['Database design and Query construction for citations in academic publications',
                 'Some project description goes here so that they know what skills were used developer',
-                "#65AF79"]} />
+                ['Object Oriented Programming','Python','SQLite Database Design','Graph Database Design','Query Writing','Data Analysis','Software Design','Pandas']]} />
+
+            <ProjectCard content={
+                ['Data Visualisation of NFT commerce',
+                'Some project description goes here so that they know what skills were used developer',
+                ['Data Visualisation','Data Cleaning & Analysis','Website development','Javascript','Bootstrap']]} />
+            
             <ProjectCard content={
                 ['Gamifying cultural heritage through Linked Open Data',
                 'Some project description goes here so that they know what skills were used developer',
-                "#8AC4D8"]} />
+                ['skill1','skill2','skill3','skill4','skill5']]} />
+
             <ProjectCard content={
                 ['Digital Publication for the web',
                 'Some project description goes here so that they know what skills were used developer',
-                "#8AC4D8"]} />
+                ['skill1','skill2','skill3','skill4']]} />
+
             <ProjectCard content={
                 ["Building Knowledge Graphs from a stoics's dairy",
                 'Some project description goes here so that they know what skills were used developer',
-                "#8AC4D8"]} />
+                ['skill1','skill2','skill3','skill4']]} />
+
             <ProjectCard content={
                 ["Master's Thesis",
                 'Some project description goes here so that they know what skills were used developer',
-                "#D88AA6"]} />
+                ['skill1','skill2','skill3','skill4','skill5','skill6']]} />
         </div>
         </>
     )
