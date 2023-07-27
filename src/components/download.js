@@ -20,6 +20,9 @@ function Download({margin}) {
     const styles = {
         container:{
             margin:marg,
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent:'center',
             height:'1.5rem',
             padding:'0.5rem',
             backgroundColor: isHovered? '#244238':'Transparent',

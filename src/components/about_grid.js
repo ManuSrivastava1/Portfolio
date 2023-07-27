@@ -28,19 +28,20 @@ function AboutGrid() {
             </div>
             <div className='info1' style={styles.info1}>
                 <SectionInfo content={<>
-                                        <div>
-                                        Bachelor's Degree - 
-                                        B.des in Industrial Design
+                                       
+                                        <span className='H3 Erode'>Bachelor's Degree -</span><br/>
+                                        <div style={styles.indent}>B.des in Industrial Design<br/>
                                         September,2015- January,2020 <br/>
-                                        <a href='https://www.nid.ac.in/academics/b-des-program/industrial-design' target="_blank" rel='noreferrer'>NID VIJAYAWADA</a>
+                                        <a href='https://www.nid.ac.in/academics/b-des-program/industrial-design' target="_blank" rel='noreferrer'><span className='Btext2 Plex'>NID VIJAYAWADA</span></a>
                                         </div>
                                         <br/>
-                                        <div>
-                                        Master's Degree - 
-                                        M.A in Digital Humanities
+                                        
+                                        <span className='H3 Erode'>Master's Degree -</span><br/>
+                                        <div style={styles.indent}>M.A in Digital Humanities<br/>
                                         September,2021 - Ongoing <br />
-                                        UNI BOLOGNA <br/>
-                                        Course Programme page
+                                        <a href='https://corsi.unibo.it/2cycle/DigitalHumanitiesKnowledge/course-structure-diagram/piano/2022/9224/000/000/2022' target="_blank" rel='noreferrer'><span className='Btext2 Plex'>Degree Course Programme page</span></a>
+                                        <br/>
+                                        
                                         </div>
                                         </>} />
             </div>
@@ -49,16 +50,15 @@ function AboutGrid() {
             </div>
             <div className='info2' style={styles.info2}>
                 <SectionInfo content={<>
-                                        <div>
-                                        Python – <br/> 
-                                        can proficiently use python along with multiple libraries like pandas,numpy etc for building complex softwares like database management, language processing ,etc.<br/><br/>
-                                        Javascript – <br/>
-                                        Is comfortable using javascript for web-design and interactions of medium complexity. Has used React.js for frontend design and development.<br/><br/>
-                                        Figma – <br/>
-                                        can proficiently design documents and webpages using figma. Have worked collaboratively on design works in the past. <br/><br/>
-                                        MS/Google Office suite - <br/>
-                                        can proficiently use office suite for data exchange and communication,documentation amongst other things. <br/><br/>
-                                        </div>
+                            
+                                        <span className='H3 Erode'>Python  </span>
+                                        <div style={styles.indent}>can proficiently use python along with multiple libraries like pandas,numpy etc for building complex softwares like database management, language processing ,etc.</div><br/>
+                                        <span className='H3 Erode'>Javascript  </span>
+                                        <div style={styles.indent}>has experience using javascript for web-design and interactions of medium complexity. Has used React.js for frontend design and development.</div><br/>
+                                        <span className='H3 Erode'>Figma  </span><br/>
+                                        <div style={styles.indent}>can proficiently design documents and webpages using figma. Have worked collaboratively on design works in the past.</div><br/>
+                                        <span className='H3 Erode'>MS/Google Office suite  </span>
+                                        <div style={styles.indent}>can proficiently use office suite for data exchange and communication,documentation amongst other things. </div>
                                     </>} />
             </div>
 
@@ -67,18 +67,21 @@ function AboutGrid() {
             </div>
             <div className='info3' style={styles.info3}>
                 <SectionInfo content={<>
-                                        <div>
-                                        UX-design Associate <br/>
-                                        Oct,2019 – Nov,2019 <span className='highligh'> at Netbramha Design Studio</span> <br/>
-                                        A global design studio studio specialising in UX/UI solutions. My role here involves generating plans for digital products and services. while collaborating with the stakeholders.<br/><br/>
-                                        UX-designer <br/>
-                                        May,2020 – Jul,2020 <span className='highligh'> at Museum Memories Project</span> <br/>
+                                        
+                                        <span className='H3 Erode'>UX-design Associate </span><br/>
+                                        Oct,2019 – Nov,2019 
+                                        <div style={styles.indent}><span className='highligh'> at Netbramha Design Studio</span> <br/>
+                                        A global design studio studio specialising in UX/UI solutions. My role here involves generating plans for digital products and services. while collaborating with the stakeholders.</div><br/>
+                                        <span className='H3 Erode'>UX-designer </span><br/>
+                                        May,2020 – Jul,2020 
+                                        <div style={styles.indent}><span className='highligh'> at Museum Memories Project</span> <br/>
                                         An oral history project started with a mentor and a friend. I was
-                                        involved as UX designer and project planner to tackle issues like accessibility to museums in India during Covid.<br/><br/>
-                                        UX-design Intern <br/>
-                                        Jan,2019 – Jul,2019 <span className='highligh'> at Cogoport</span> <br/>
-                                        As a member of UX team, I worked on several Digital products for sea based Logistics startup in Mumbai. <br/><br/>
-                                        </div>
+                                        involved as UX designer and project planner to tackle issues like accessibility to museums in India during Covid.</div><br/>
+                                        <span className='H3 Erode'>UX-design Intern </span><br/>
+                                        Jan,2019 – Jul,2019 
+                                        <div style={styles.indent}><span className='highligh'> at Cogoport</span> <br/>
+                                        As a member of UX team, I worked on several Digital products for sea based Logistics startup in Mumbai. </div><br/>
+                                        
 
                                     </>} />
             </div>
@@ -88,13 +91,11 @@ function AboutGrid() {
             </div>
             <div className='info4' style={styles.info4}>
                 <SectionInfo content={<>
-                                        <div>
-                                            IELTS - English<br/>
-                                            8.0 <br/><br/>
-                                            Certificate of Participation<br/>
-                                            EncodeAI conference and workshop,2022<br/><br/>
-                        
-                                        </div>
+                                        
+                                        <span className='H3 Erode'>IELTS - English</span>
+                                        <div style={styles.indent}>8.0 </div><br/>
+                                        <span className='H3 Erode'>Certificate of Participation</span>
+                                        <div style={styles.indent}>EncodeAI conference and workshop,2022 </div><br/>
                                     </>} />
             </div>
 
@@ -103,16 +104,12 @@ function AboutGrid() {
             </div>
             <div className='info5' style={styles.info5}>
                 <SectionInfo content={<>
-                                        <div>
-                                            Mobile<br/>
-                                            +39 3 FIVE 19 32 ZERO 3 48 <br/><br/>
-                                            E-mail 1<br/>
-                                            manu.srivastava2@studio.unibo.it<br/><br/>
-                                            E-mail 2<br/>
-                                            manu_srivastava@outlook.com<br/><br/>
-                                            Currently Living In<br/>
-                                            Bologna, Italy <br/><br/>
-                                        </div>
+                                        <span className='H3 Erode'>Mobile</span>
+                                        <div style={styles.indent}>+39 3 FIVE 19 32 ZERO 3 48 </div><br/>
+                                        <span className='H3 Erode'>E-mail 1</span> 
+                                        <div style={styles.indent}>manu.srivastava2@studio.unibo.it </div>  <br/>
+                                        <span className='H3 Erode'>E-mail 2</span>  
+                                        <div style={styles.indent}>manu_srivastava@outlook.com</div><br/>
                                     </>} />
             </div>
         </div>
@@ -195,6 +192,10 @@ const styles={
         gridRow:'7/8',
         border:'0.5px solid rgba(43,49,47,0.2)',
     },
+    indent:{
+        // float:'right',
+        paddingLeft:'5vw',
+    }
 }
 
 export default AboutGrid
