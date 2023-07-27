@@ -3,28 +3,35 @@ import { useState } from 'react';
 
 function ProjectCard({content}) {
     const [isModalOpen, setIsModalOpen] = useState(false);
+    const [isHovered, setIsHovered] = useState(false);
+
+    const handleMouseEnter = () => {
+        setIsHovered(true);
+    };
+    const handleMouseLeave =() => {
+        setIsHovered(false);
+    };
 
     const color = content[2]
     const styles = {
         card:{
             // width:'min(450px, 30vw)',
             height:'max(250px, calc(0.6 * min(450px, 30vw)))',
-            border:'1px solid',
+            border: isHovered? '1px solid':'0.5px solid',
             gridColumn: 'auto / span 4',
-            marginBottom:'16px',
-            borderColor: color,
+            borderColor: isHovered? 'rgba(43,49,47,1)': 'rgba(43,49,47,0.2)',
         },
         cardHeader:{
-            height:'18%',
-            backgroundColor: color,
-            padding:'16px',
+            width: '60%',
+            height:'60%',
+            padding:'1.5rem',
         },
         cardBody:{
-            padding:'16px',
+            padding:'0rem 1.5rem 0rem 1.5rem',
         },
         clickableText:{
             cursor: 'pointer',
-            color: 'blue',
+            color: isHovered? 'rgba(43,49,47,1)': 'rgba(43,49,47,0.2)',
         },
         modalContainer: {
             position: 'fixed',
@@ -33,7 +40,7 @@ function ProjectCard({content}) {
             width: '100%',
             height: '100%',
             background: 'rgba(0, 0, 0, 0.7)', // Adjust the opacity to control the blur intensity
-            display: isModalOpen ? 'block' : 'none',
+            display: isModalOpen ? 'flex' : 'none',
           },
           modalContent: {
             position: 'absolute',
@@ -42,8 +49,8 @@ function ProjectCard({content}) {
             transform: 'translate(-50%, -50%)',
             background: 'white',
             padding: '20px',
-            width:'70vw',
-            height:'60vh',
+            width:'60vw',
+            height:'80vh',
           },
     }
 
@@ -63,21 +70,21 @@ function ProjectCard({content}) {
 
     return (
         <>
-            <div style={styles.card}>
+            <div style={styles.card} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
                 <div className='cardHeader' style={styles.cardHeader}>
-                    <span className='H4'>{content[0]}</span>
+                    <span className='H3'>{content[0]}</span>
                 </div>
                 <div className='cardBody' style={styles.cardBody}>
-                    <span className='Btext1'>{content[1]}</span><br/><br/>
-                    <span style={styles.clickableText} onClick={handleClickableTextClick}>Click To View More ↗</span>
+                    
+                    <span className='Btext2' style={styles.clickableText} onClick={handleClickableTextClick}>Click To View More ↗</span>
                 </div>
             </div>
-            {/* Modal */}
+            
             {isModalOpen && (
                 <div style={styles.modalContainer} onClick={handleModalClose}>
                 <div className='modalSpace' style={styles.modalContent}>
                     {/* Add modal content here */}
-                    <h2>Modal Content</h2>
+                    <h2>{content[0]}</h2>
                     <p>Here's the modal content...</p>
                 </div>
                 </div>

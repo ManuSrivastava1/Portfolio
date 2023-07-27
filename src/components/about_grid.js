@@ -29,7 +29,7 @@ function AboutGrid() {
                                         Bachelor's Degree - 
                                         B.des in Industrial Design
                                         September,2015- January,2020 <br/>
-                                        <a>NID VIJAYAWADA</a>
+                                        <a href='https://www.nid.ac.in/academics/b-des-program/industrial-design'>NID VIJAYAWADA</a>
                                         </div>
                                         <br/>
                                         <div>

@@ -19,14 +19,12 @@ function NavButton({content}) {
             marginRight:'16px',
             padding:'0 16px 0 16px',
             
-            backgroundColor: isHovered ? 'lightblue' : 'transparent',
-            borderColor: isHovered ? 'blue' : 'black',
+            backgroundColor: isHovered ? '#244238' : 'transparent',
         },
         span:{
             lineHeight:'44px',
             textDecoration:'none',
-            color:'#090EC6',
-
+            color: isHovered? 'white' : '#244238',
         }
     }
 
@@ -39,7 +37,7 @@ function NavButton({content}) {
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
             >
-            <span className='H6' id={content[1]} style={styles.span}>{content[0]}</span>
+            <span className='H4' id={content[1]} style={styles.span}>{content[0]}</span>
         </div>
         </Link>
         </>

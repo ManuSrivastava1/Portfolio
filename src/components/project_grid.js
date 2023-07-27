@@ -46,8 +46,7 @@ function ProjectGrid() {
 const style={
     ProjectGrid:{
         display:'grid',
-        gridTemplateColumns:'repeat(8, 1fr)',
-        gridColumnGap:'16px',
+        gridTemplateColumns:'repeat(12, 1fr)',
     }
 }
 export default ProjectGrid
