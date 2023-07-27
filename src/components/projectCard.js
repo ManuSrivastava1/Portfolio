@@ -1,6 +1,8 @@
 import React from 'react'
 import { useState } from 'react';
 
+import ModalGrid from './modal_grid';
+
 function ProjectCard({content}) {
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [isHovered, setIsHovered] = useState(false);
@@ -47,9 +49,9 @@ function ProjectCard({content}) {
             top: '50%',
             left: '50%',
             transform: 'translate(-50%, -50%)',
-            background: 'white',
+            background: '#D9D9D9',
             padding: '20px',
-            width:'60vw',
+            width:'80vw',
             height:'80vh',
           },
     }
@@ -84,8 +86,7 @@ function ProjectCard({content}) {
                 <div style={styles.modalContainer} onClick={handleModalClose}>
                 <div className='modalSpace' style={styles.modalContent}>
                     {/* Add modal content here */}
-                    <h2>{content[0]}</h2>
-                    <p>Here's the modal content...</p>
+                    <ModalGrid content={content[0]} />
                 </div>
                 </div>
             )}

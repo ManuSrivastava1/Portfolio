@@ -6,7 +6,7 @@ function SectionCard({ Label }) {
     
     const styles = {
         card:{
-            backgroundColor:'#D9D9D9',
+            
             display:'flex',
             alignItems:'center',
             justifyContent:'Left',
