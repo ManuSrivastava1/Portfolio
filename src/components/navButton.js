@@ -37,7 +37,7 @@ function NavButton({content}) {
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
             >
-            <span className='H4' id={content[1]} style={styles.span}>{content[0]}</span>
+            <span className='H4 Erode' id={content[1]} style={styles.span}>{content[0]}</span>
         </div>
         </Link>
         </>

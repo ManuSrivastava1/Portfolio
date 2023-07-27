@@ -12,7 +12,7 @@ function ProjectCard({content}) {
         setIsHovered(false);
     };
 
-    const color = content[2]
+    // const color = content[2]
     const styles = {
         card:{
             // width:'min(450px, 30vw)',
@@ -54,7 +54,7 @@ function ProjectCard({content}) {
           },
     }
 
-    const handleClickableTextClick = () => {
+    const handleClickable = () => {
         setIsModalOpen(true);
         document.body.style.overflow = 'hidden'; // Disable scrolling on the main page
       };
@@ -70,13 +70,13 @@ function ProjectCard({content}) {
 
     return (
         <>
-            <div style={styles.card} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+            <div style={styles.card} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} onClick={handleClickable}>
                 <div className='cardHeader' style={styles.cardHeader}>
-                    <span className='H3'>{content[0]}</span>
+                    <span className='H3 Erode'>{content[0]}</span>
                 </div>
                 <div className='cardBody' style={styles.cardBody}>
                     
-                    <span className='Btext2' style={styles.clickableText} onClick={handleClickableTextClick}>Click To View More ↗</span>
+                    <span className='Btext2 Plex' style={styles.clickableText}>Click To View More ↗</span>
                 </div>
             </div>
             

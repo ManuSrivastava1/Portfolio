@@ -10,12 +10,12 @@ function Footer() {
     return (
         <div className='footer' style={styles.footerContainer}>
             <div className='contact' style={styles.contact}>
-                <p className='H4'>Contact me –</p>
-                <p className='H5'>manu_srivastava@outlook.com</p>
+                <p className='H4 Erode'>Contact me –</p>
+                <p className='Btext2 Plex'>manu_srivastava@outlook.com</p>
             </div>
             <div className='publishDate' style={styles.publish}>
-                <span className='H4'>Last Updated –</span><br/>
-                <span className='H5'>22 - Aug - 2023</span>
+                <span className='H4 Erode'>Last Updated –</span><br/>
+                <span className='Btext2 Plex'>22 - Aug - 2023</span>
             </div>
             <div className='links' style={styles.clickable}>
                 <div>
@@ -25,7 +25,7 @@ function Footer() {
                     <Icon content={[linkidInSVG,'https://www.linkedin.com/in/manu-srivastava-423456166/']} />
                 </div>
                 <div>
-                    <Download margin={'8px'}/>
+                    <Download margin={'0.5rem'}/>
                 </div>
 
             </div>
@@ -39,21 +39,21 @@ const styles = {
         marginBottom:'32px',
         height:'92px',
         display:'grid',
-        gridTemplateColumns:'repeat(8,1fr)',
-        columnGap:'20px',
+        gridTemplateColumns:'repeat(12,1fr)',
+        columnGap:'16px',
     },
     contact:{
-        gridColumn: '1/3',
+        gridColumn: '1/5',
         overflowWrap: 'break-word',
-        padding:'1.5rem 1.5rem 1.5rem 0rem',
+        padding:'1.5rem',
     },
     publish:{
-        gridColumn:'3/5',
+        gridColumn:'5/9',
         overflowWrap: 'break-word',
-        padding:'1.5rem 1.5rem 1.5rem 0rem',
+        padding:'1.5rem',
     },
     clickable:{
-        gridColumn:'5/9',
+        gridColumn:'9/13',
         display:'flex',
         justifyContent:'flex-end',
         padding:'1.5rem 0rem 1.5rem 1.5rem',

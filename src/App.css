@@ -72,7 +72,6 @@
 }
 
 .H3{
-  font-family: 'ErodeV',sans-serif;
   font-size: 1.5rem;
   font-weight: 500;
   line-height: 24px;
@@ -80,17 +79,21 @@
 }
 
 .H4{
-  font-family: 'ErodeV',sans-serif;
   font-size: 0.9rem;
   font-weight: 600;
   line-height: 1.5rem;
   color: #244238;
 }
+.Erode{
+  font-family: 'ErodeV',sans-serif;
+}
+.Plex{
+  font-family: 'IBMplexMono_M',sans-serif;
+}
 
 .H5{
-  font-family: 'NeueMachina_R',sans-serif;
-  font-size: 14px;
-  line-height: 14px;
+  font-size: 0.9rem;
+  line-height: 0.9rem;
   color: #4D4D4D;
 }
 
@@ -101,17 +104,15 @@
 }
 
 .Btext1{
-  font-family: 'QuestaG',sans-serif;
   font-size: 18px;
   line-height: 22px;
   color: #1e1e1e;
 }
 .Btext2{
-  font-family: 'IBMplexMono_M',sans-serif;
   font-size: 12px;
   letter-spacing: -0.6px;
   line-height: 22px;
-  color: #090EC6;
+  color: rgba(43, 49, 47, 0.5);
 }
 
 .hero_text2{

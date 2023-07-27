@@ -1,26 +1,45 @@
 import React from 'react'
+import { useState } from 'react';
+
 import CV from '../CV[40].pdf'
 
 
 
+
 function Download({margin}) {
+    const [isHovered, setIsHovered ] = useState(false);
+
+    const handleMouseEnter = () =>{
+        setIsHovered(true);
+    };
+    const handleMouseLeave = () =>{
+        setIsHovered(false);
+    };
+
     const marg = margin
     const styles = {
         container:{
             margin:marg,
-            height:'2.5rem',
+            height:'1.5rem',
             padding:'0.5rem',
-            backgroundColor:'Transparent',
-            border:'1px solid #090EC6'
+            backgroundColor: isHovered? '#244238':'Transparent',
+            border:'1px solid #244238',
+            
+        },
+        text:{
+            color: isHovered? 'white': '#244238',
+        },
+        link:{
+            textDecoration:'none',
         }
     }
 
     return (
         <>
-        <a href={CV} download>
-        <button style={styles.container}>
-            <span className='H6'>Download CV</span>
-        </button>
+        <a href={CV} download style={styles.link}>
+        <div style={styles.container} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+            <span className='H4 Erode' style={styles.text}>Download CV</span>
+        </div>
         </a>
         </>
     )
