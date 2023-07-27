@@ -50,6 +50,7 @@
   font-size: 3rem;
   font-weight: 400;
   line-height: 52px;
+  letter-spacing: -0.48px;
   color: #3F3F3F;
   overflow-wrap: break-word;
 }
@@ -58,6 +59,7 @@
   font-size: 3rem;
   font-weight: 600;
   line-height: 52px;
+  letter-spacing: -0.96px;
   color: #244238;
   overflow-wrap: break-word;
 }
