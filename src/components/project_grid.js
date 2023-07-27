@@ -32,14 +32,14 @@ function ProjectGrid() {
                 ['skill1','skill2','skill3','skill4','skill5']]} />
 
             <ProjectCard content={
-                ['Digital Publication for the web',
+                ["Network Analysis Of YouTube's Recomendation System From It's Early Years",
                 'Some project description goes here so that they know what skills were used developer',
-                ['skill1','skill2','skill3','skill4']]} />
+                ['Network Building',"Measuring Network's Properties",'Network Visualisation In Gephi','Netowrk Building from Raw Data','Statistical Analysis of Data']]} />
 
             <ProjectCard content={
                 ["Building Knowledge Graphs from a stoics's dairy",
                 'Some project description goes here so that they know what skills were used developer',
-                ['skill1','skill2','skill3','skill4']]} />
+                ['Ontology Building','Sentiment Analysis','Graph Database design','Knowledge Graph design','Query Design In SPARQL','Website Design','Knowledge Extraction','Data Processing In Python']]} />
 
             <ProjectCard content={
                 ["Master's Thesis",
