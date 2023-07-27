@@ -35,8 +35,8 @@ const styles ={
     mainGrid:{
         paddingTop:'14vh',
         display:'grid',
-        gridTemplateColumns:'repeat(8, 1fr)',
-        gridColumnGap:'20px',
+        gridTemplateColumns:'repeat(12, 1fr)',
+        gridColumnGap:'16px',
     },
     hero_text:{
         gridColumn: '1/9',
