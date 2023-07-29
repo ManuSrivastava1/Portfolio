@@ -53,6 +53,7 @@ function ProjectCard({content}) {
             padding: '2rem',
             width:'60vw',
             height:'80vh',
+            overflow:'scroll',
           },
     }
 
@@ -72,7 +73,7 @@ function ProjectCard({content}) {
 
     return (
         <>
-            <div style={styles.card} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} onClick={handleClickable}>
+            <div className='Pcard' style={styles.card} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} onClick={handleClickable}>
                 <div className='cardHeader' style={styles.cardHeader}>
                     <span className='H3 Erode'>{content[0]}</span>
                 </div>

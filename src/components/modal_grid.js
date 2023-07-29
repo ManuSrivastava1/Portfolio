@@ -51,7 +51,7 @@ function ModalGrid({content}) {
             width:'100%',
             display: 'flex',
             alignItems: 'center',
-            padding:'0.5rem',
+            // padding:'0.5rem',
             marginBottom:'0.8rem',
         },
     };
@@ -62,15 +62,15 @@ function ModalGrid({content}) {
                 <span className='H2 Erode'>{content[0]}</span>
             </div>
             <div style={styles.body}>
-                <p className='H3 Erode'>About This Project</p> <br/>
+                <p className='H3 Erode resp'>About This Project</p> <br/>
                 <p className='Btext2 QuestaG' style={styles.bodyText}>{content[1]}</p>
             </div>
             <div style={styles.foot}>
-                <span className='H3 Erode'>Links to the project</span>
+                <span className='H3 Erode resp'>Links to the project</span>
             </div>
             <div style={styles.side}>
                 <div style={styles.tagT}>
-                    <span className='H3 Erode'>Key-Learnings</span>
+                    <span className='H3 Erode resp'>Key-Learnings</span>
                 </div>
                 {tagComponents}
                 {/*<Tag content={content[2][0]} />*/}

@@ -24,6 +24,7 @@ function Download({margin}) {
             alignItems: 'center',
             justifyContent:'center',
             height:'1.5rem',
+            width:'6rem',
             padding:'0.5rem',
             backgroundColor: isHovered? '#244238':'Transparent',
             border:'1px solid #244238',

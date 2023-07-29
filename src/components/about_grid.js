@@ -195,6 +195,7 @@ const styles={
     indent:{
         // float:'right',
         paddingLeft:'5vw',
+        overflowWrap:'break-word',
     }
 }
 
