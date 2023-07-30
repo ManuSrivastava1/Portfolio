@@ -1,6 +1,7 @@
 import React from 'react'
 
 import ProjectCard from './projectCard'
+import LinkButton from './linkButton';
 
 function ProjectGrid() {
     return (
@@ -9,7 +10,12 @@ function ProjectGrid() {
             <ProjectCard content={
                 ['Predicting pollution level with an LSTM model',
                 'Some project description goes here so that they know what skills were used developer',
-                ['Building & Training ML Model','Python','Documentation','Tensorflow','Univariate Prediction','Data Cleaning','Data Analysis']]} />
+                ['Building & Training ML Model','Python','Documentation','Tensorflow','Univariate Prediction','Data Cleaning','Data Analysis','Visualising training loss'],
+                ]} 
+                buttonData={
+                    [<LinkButton content={['https://w7.pngwing.com/pngs/914/758/png-transparent-github-social-media-computer-icons-logo-android-github-logo-computer-wallpaper-banner-thumbnail.png','Project Repository','https://github.com/ManuSrivastava1/ML_LSTM_Timeseries']} key={1}/>,
+                    <LinkButton content={['https://w7.pngwing.com/pngs/914/758/png-transparent-github-social-media-computer-icons-logo-android-github-logo-computer-wallpaper-banner-thumbnail.png','Project Repository','https://github.com/ManuSrivastava1/ML_LSTM_Timeseries']} key={2}/>]}
+                />
 
             <ProjectCard content={
                 ['Analysing Prison sentence data in Europe',

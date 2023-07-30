@@ -3,7 +3,7 @@ import { useState } from 'react';
 
 import ModalGrid from './modal_grid';
 
-function ProjectCard({content}) {
+function ProjectCard({content,buttonData}) {
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [isHovered, setIsHovered] = useState(false);
 
@@ -62,14 +62,17 @@ function ProjectCard({content}) {
         document.body.style.overflow = 'hidden'; // Disable scrolling on the main page
       };
     
-      const handleModalClose = (e) => {
-        if (e.target.classList.contains('modalSpace')) {
-            // Do nothing if the click is within the modal content
-            return;
-          }
+    const handleModalClose = (e) => {
+    if (e.target.classList.contains('modal')) {
+        // close if the grey part is clicked
+        console.log('the modal grey was clicked')
+        console.log(e.target.classList)
         setIsModalOpen(false);
-        document.body.style.overflow = 'auto';
-      };
+        return;
+        }
+
+    document.body.style.overflow = 'auto';
+    };
 
     return (
         <>
@@ -84,10 +87,10 @@ function ProjectCard({content}) {
             </div>
             
             {isModalOpen && (
-                <div style={styles.modalContainer} onClick={handleModalClose}>
-                <div className='modalSpace' style={styles.modalContent}>
+                <div className='modal' style={styles.modalContainer} onClick={handleModalClose}>
+                <div className='modalbody' style={styles.modalContent}>
                     {/* Add modal content here */}
-                    <ModalGrid content={[content[0],content[1],content[2]]} />
+                    <ModalGrid content={[content[0],content[1],content[2]]} buttonData={buttonData} />
                 </div>
                 </div>
             )}

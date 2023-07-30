@@ -32,7 +32,7 @@ function AboutGrid() {
                                         <span className='H3 Erode'>Bachelor's Degree -</span><br/>
                                         <div style={styles.indent}>B.des in Industrial Design<br/>
                                         September,2015- January,2020 <br/>
-                                        <a href='https://www.nid.ac.in/academics/b-des-program/industrial-design' target="_blank" rel='noreferrer'><span className='Btext2 Plex'>NID VIJAYAWADA</span></a>
+                                        <a href='https://www.nid.ac.in/academics/b-des-program/industrial-design' target="_blank" rel='noreferrer'><span className='Btext2 Plex'>Degree Course Page</span></a>
                                         </div>
                                         <br/>
                                         

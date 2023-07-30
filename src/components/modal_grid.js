@@ -2,7 +2,8 @@ import React from 'react'
 
 import Tag from './tagButton';
 
-function ModalGrid({content}) {
+
+function ModalGrid({content,buttonData}) {
     // const tagArray = Array.from({ length: content[2].length }, (_, index) => index);
     //const i = content[2].length;
     const tagComponents = [];
@@ -11,6 +12,7 @@ function ModalGrid({content}) {
         // console.log('Loop iteration:', i);
         tagComponents.push((<Tag key={i} content={content[2][i]} />))
       }
+
 
     const styles ={
         container:{
@@ -38,6 +40,8 @@ function ModalGrid({content}) {
         foot:{
             gridColumn:'1/10',
             gridRow:'3/4',
+            display:'flex',
+            flexDirection:'column',
         },
         side:{
             gridColumn:'10/13',
@@ -54,6 +58,10 @@ function ModalGrid({content}) {
             // padding:'0.5rem',
             marginBottom:'0.8rem',
         },
+        buttonsContainer:{
+            display:'flex',
+            flexDirection:'row',
+        }
     };
     return (
         <>
@@ -65,8 +73,12 @@ function ModalGrid({content}) {
                 <p className='H3 Erode resp'>About This Project</p> <br/>
                 <p className='Btext2 QuestaG' style={styles.bodyText}>{content[1]}</p>
             </div>
-            <div style={styles.foot}>
+            <div style={styles.foot} className='modal-foot'>
+                
                 <span className='H3 Erode resp'>Links to the project</span>
+                <div className='modal-buttons' style={styles.buttonsContainer}>
+                {buttonData}
+                </div>
             </div>
             <div style={styles.side}>
                 <div style={styles.tagT}>
