@@ -31,6 +31,7 @@ function ModalGrid({content,buttonData}) {
         body:{
             gridColumn:'1/10',
             gridRow:'2/3',
+            paddingRight:'2rem',
             
         },
         bodyText:{
