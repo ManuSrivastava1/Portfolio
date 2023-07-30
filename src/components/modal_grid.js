@@ -37,6 +37,7 @@ function ModalGrid({content,buttonData}) {
         bodyText:{
             fontSize:'1rem',
             color:'black', 
+            textAlign:'justify',
         },
         foot:{
             gridColumn:'1/10',
