@@ -68,10 +68,11 @@ function ProjectCard({content,buttonData}) {
         console.log('the modal grey was clicked')
         console.log(e.target.classList)
         setIsModalOpen(false);
+        document.body.style.overflow = 'auto';
         return;
         }
 
-    document.body.style.overflow = 'auto';
+    
     };
 
     return (
