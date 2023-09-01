@@ -15,8 +15,8 @@ function AboutGrid() {
             <div  style={styles.boldtext}>
                 <span className='H1'>Meet </span>
                 <span className='H1B'>Manu Srivastava </span>
-                <p className='Btext1'>He is a master's student at the University of Bologna, currently working on his Master's Thesis in digital Humanities. He has background in Design and has worked as a UX designer in the past. He is specialy interested in Computational linguistics and Machine learning and it highy fascinated by the possibilies and challanges the field has to offer. <br/><br/>
-                Apart from solving problems through code, he like to draw and paint, mostly digitaly and is always up for a converstation about poems. Drop an email to say hi to him!</p>
+                <p className='Btext1'>He is a master's student at the University of Bologna, currently working on his thesis in Digital Humanities. He has a background in Design and has worked as a UX designer in the past. He is especially interested in Computational linguistics and Machine learning and is highly fascinated by the possibilities and challenges the field has to offer.
+Apart from solving problems through code, he likes to draw and paint, mostly digitally, and is always up for a conversation about poems. Drop an email to say hi to him!</p>
             </div>
             <div style={styles.button}>
                 <Download margin={'8pt 0pt 8pt 0pt'}/>
