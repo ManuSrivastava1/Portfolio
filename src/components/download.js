@@ -42,7 +42,7 @@ function Download({margin}) {
         <>
         <a href={CV} download style={styles.link}>
         <div style={styles.container} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-            <span className='H4 Erode' style={styles.text}>Download CV</span>
+            <span className='H5 Erode' style={styles.text}>Download CV</span>
         </div>
         </a>
         </>
