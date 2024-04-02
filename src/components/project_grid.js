@@ -125,7 +125,7 @@ function ProjectGrid() {
                     <LinkButton content={[websiteIcon,'Project Website','https://ontomeditations.github.io/OntoMeditations/']} key={2}/>]}/>
 
             <ProjectCard content={
-                ["Master's Thesis",
+                ["Master's Thesis: Frame Semantic Parsing using Pretrained language models and Graph encoders.",
 
                 "This is a placeholder text for the project as it's currently a WIP. Feel free to contact me to know more about it. ",
                 []]} 

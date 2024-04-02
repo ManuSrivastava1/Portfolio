@@ -15,7 +15,7 @@ function About() {
             <main>
                 <AboutGrid />
             </main>
-            <Footer content={'This is the footer'}/>
+            <Footer />
         </div>
         </>
     )

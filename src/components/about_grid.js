@@ -118,7 +118,7 @@ Apart from solving problems through code, he likes to draw and paint, mostly dig
 
 const styles={
     aboutGrid:{
-        paddingTop:'14vh',
+        paddingTop:'8rem', //14vh
         display:'grid',
         gridTemplateColumns:'repeat(12, 1fr)',
         // gridTemplateRows:'repeat(6, 1fr)',

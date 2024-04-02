@@ -1,5 +1,6 @@
-import React from 'react'
+import React from 'react';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 import ModalGrid from './modal_grid';
 
@@ -55,11 +56,15 @@ function ProjectCard({content,buttonData}) {
             height:'80vh',
             overflow:'scroll',
           },
+        span:{
+            textDecoration:'none',
+            color: isHovered? 'white' : '#244238',
+        },
     }
 
     const handleClickable = () => {
-        setIsModalOpen(true);
-        document.body.style.overflow = 'hidden'; // Disable scrolling on the main page
+        // setIsModalOpen(true);
+        // document.body.style.overflow = 'hidden'; // Disable scrolling on the main page
       };
     
     const handleModalClose = (e) => {
@@ -78,6 +83,7 @@ function ProjectCard({content,buttonData}) {
     return (
         <>
             <div className='Pcard' style={styles.card} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} onClick={handleClickable}>
+                <Link to={'/'+content[0]} style={styles.span}>
                 <div className='cardHeader' style={styles.cardHeader}>
                     <span className='H3 Erode'>{content[0]}</span>
                 </div>
@@ -85,6 +91,7 @@ function ProjectCard({content,buttonData}) {
                     
                     <span className='Btext2 Plex' style={styles.clickableText}>Click To View More ↗</span>
                 </div>
+                </Link>
             </div>
             
             {isModalOpen && (
@@ -94,6 +101,7 @@ function ProjectCard({content,buttonData}) {
                     <ModalGrid content={[content[0],content[1],content[2]]} buttonData={buttonData} />
                 </div>
                 </div>
+                
             )}
         </>
     )
