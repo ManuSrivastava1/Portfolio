@@ -15,7 +15,7 @@ function Footer() {
             </div>
             <div className='publishDate' style={styles.publish}>
                 <span className='H4 Erode'>Last Updated –</span><br/>
-                <span className='Btext2 Plex'>22 - Aug - 2023</span>
+                <span className='Btext2 Plex'>02 - April - 2024</span>
             </div>
             <div className='links' style={styles.clickable}>
                 <div>
